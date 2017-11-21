@@ -8,7 +8,7 @@ RUN set -x \
     && update-ca-certificates \
     && wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_amd64.tar.gz \
     && tar -zxf frp_${FRP_VERSION}_linux_amd64.tar.gz \
-    && mv frp_${FRP_VERSION}_linux_amd64 / \
+    && mv frp_${FRP_VERSION}_linux_amd64/* . \
     && mkdir -p conf \
     && ls \
     && chmod 777 ./frps
