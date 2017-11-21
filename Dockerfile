@@ -10,7 +10,8 @@ RUN set -x \
     && tar -zxf frp_${FRP_VERSION}_linux_amd64.tar.gz \
     && mv frp_${FRP_VERSION}_linux_amd64 / \
     && mkdir -p conf \
-    && chmod 777 frps
+    && ls
+    && chmod 777 ./frps
 
 
 COPY frps.ini /conf/frps.ini
